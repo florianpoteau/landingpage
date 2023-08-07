@@ -1,0 +1,199 @@
+/* Navbar */
+
+:root{
+    --box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
+}
+
+nav{
+    box-shadow: var(--box-shadow);
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    color: black;
+}
+
+.listeNav{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.logo {
+    flex: 2;
+  }
+
+  /* Body */
+
+  body{
+    background-color: #fffafa;
+    margin: 0;
+  }
+
+  h2{
+    font-family: 'Abel', sans-serif;
+    font-size: 35px;
+    color: #6a90b1;
+  }
+
+  h3{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  p, li{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+  }
+
+  .intro{
+    text-align: center;
+    margin: 7% 15%;
+  }
+
+.equipe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerEquipe{
+    padding: 2%;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    max-width: 250px;
+    border-radius: 5%;
+}
+
+.h2Equipe{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 5%;
+}
+
+.h3Equipe{
+    color: #e7b87a;
+    text-align: center;
+    margin: 0;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.descriptionEquipe{
+word-spacing: 15px;
+font-size: 15px;
+}
+
+/* Technologie */
+
+.technologie{
+    display: flex;
+    margin-left: 8%;
+    gap: 5%;
+}
+
+.containerList{
+    flex-direction: column;
+    flex: 2;
+}
+
+.listeTechno{
+    list-style-type: circle;
+    margin-bottom: 2%;
+}
+
+.logoLanguage{
+    display: flex;
+    gap: 15%;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.logoProjet{
+    box-shadow: var(--box-shadow);
+}
+
+.flutterMobile{
+    margin-top: 8%;
+}
+
+.h2Accompagnement{
+    text-align: center;
+}
+
+/* Carousel */
+
+.carousel{
+    position: relative;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .carousel-slide {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide > div {
+    min-width: 100%;
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 10%;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    padding: 0.5%;
+  }
+  
+  #nextBtn {
+    right: 10%;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    padding: 0.5%;
+  }
+
+  .h2CarouselBlue{
+    text-align: center;
+    color: #19a2e2bf;
+  }
+
+  .h2CarouselOrange{
+    text-align: center;
+    color: #e7b87a;
+  }
+
+  .h2CarouselGreen{
+    text-align: center;
+    color: #26992e8c;
+  }
+
+  .descriptionCompetence{
+    margin: 5%;
+  }
+
+  .h2Projet{
+    text-align: center;
+  }
