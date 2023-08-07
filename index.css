@@ -134,7 +134,7 @@ font-size: 15px;
 }
 
 .carousel-container {
-    width: 80%;
+    width: 40%;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
@@ -153,23 +153,23 @@ font-size: 15px;
     min-width: 100%;
   }
   
-  #prevBtn,
-  #nextBtn {
+  .prevBtn,
+  .nextBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
   }
   
-  #prevBtn {
-    left: 10%;
+  .prevBtn {
+    left: 20%;
     box-shadow: var(--box-shadow);
     border-radius: 50%;
     padding: 0.5%;
   }
   
-  #nextBtn {
-    right: 10%;
+  .nextBtn {
+    right: 20%;
     box-shadow: var(--box-shadow);
     border-radius: 50%;
     padding: 0.5%;
@@ -191,9 +191,73 @@ font-size: 15px;
   }
 
   .descriptionCompetence{
-    margin: 5%;
+    margin: 15%;
+    margin-top: 10%;
   }
 
   .h2Projet{
     text-align: center;
   }
+
+  /* Carousel 2 */
+
+.carousel1{
+    position: relative;
+}
+
+.carousel-container1 {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .carousel-slide1 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide1 > div {
+    min-width: 100%;
+    height: auto;
+  object-fit: cover;
+  }
+  
+  .prevBtn1,
+  .nextBtn1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .prevBtn1 {
+    left: 10%;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    padding: 0.5%;
+  }
+  
+  .nextBtn1 {
+    right: 10%;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    padding: 0.5%;
+  }
+
+.imageprojet1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.imageprojet2, .imageprojet3, .imageprojet4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
