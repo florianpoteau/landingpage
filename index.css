@@ -6,6 +6,7 @@
 
 nav{
     box-shadow: var(--box-shadow);
+    align-items: center;
 }
 
 ul{
@@ -25,6 +26,19 @@ ul{
     flex: 2;
   }
 
+  #closeBtn{
+    display: none;
+  }
+
+  #imageResponsive{
+    display: none;
+  }
+
+  
+
+  
+
+
   /* Body */
 
   body{
@@ -43,7 +57,7 @@ ul{
     font-family: 'Noto Sans', sans-serif;
   }
 
-  p, li{
+  p, li, label{
     font-family: 'Abel', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -203,6 +217,7 @@ font-size: 15px;
 
 .carousel1{
     position: relative;
+    margin-bottom: 20%;
 }
 
 .carousel-container1 {
@@ -260,4 +275,195 @@ font-size: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Formulaire */
+
+.flexForm{
+  display: flex;
+}
+
+.formcol1{
+  flex: 40%;
+  box-shadow: var(--box-shadow);
+  margin:5%;
+  margin-top: 0;
+  padding: 3%;
+  border-radius: 5%;
+}
+
+.formcol2{
+  flex: 60%;
+  margin-top: 10%;
+}
+
+.flexnomprenom, .flextelsociete{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.containerEmail, .containersujet{
+  margin-right: auto;
+  margin-left: auto;
+  width:30%;
+  margin-bottom: 5%;
+}
+
+input{
+  width: 100%;
+  height: 25px;
+  border: none;
+      border:solid 1px #ccc;
+      border-radius: 10px;
+      padding: 2%;
+      transition: border-color 0.3s;
+}
+
+#name, #firstname, #societe, #tel{
+  width: 100%;
+}
+
+#email, #subject{
+  width: 130%;
+}
+
+input:focus {
+  border: 2px solid #80b6d1;
+  outline: none; /* Supprime le contour par défaut sur le focus */
+}
+
+
+.message{
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+textarea{
+  resize: none;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 3%; 
+}
+
+textarea:focus{
+  border: 2px solid #80b6d1;
+  outline: none;
+}
+
+.containerCheckbox{
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#checkbox{
+  padding: 0;
+  width: 20%;
+}
+
+.buttonContainer{
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 30%;
+  height: 40px;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Couleur de fond du bouton au survol */
+  transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+
+
+
+/* Media screen */
+
+@media only screen and (max-width: 600px) {
+
+  nav{
+    display: flex;
+    padding-left: 5%;
+    gap: 40%;
+  }
+  
+      #imageResponsive{
+        display: block;
+      }
+      
+      /* Sidenav menu */
+  
+  #closeBtn{
+    display: block;
+  }
+  
+  ul{
+    flex-direction: column;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+    }
 
