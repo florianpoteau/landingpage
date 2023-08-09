@@ -603,6 +603,7 @@ footer{
 
 .flexnomprenom, .flexemailtel, .flexsocietesujet{
   display: block;
+  width: 95%;
 }
 
 #name,#firstname, #email, #tel, #societe, #subject{
