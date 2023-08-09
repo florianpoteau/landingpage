@@ -12,6 +12,8 @@
 
 	</head>
 	<body>
+
+
 		<nav>
 
 			<div id="mySidenav" class="sidenav">
@@ -24,44 +26,49 @@
 					<li id="contact" class="listeNav">Contact</li>
 				</ul>
 			</div>
-			<a href="#" id="openBtn">
-				<span class="burger-icon">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
-			</a>
+			<div class="burger">
+				<a href="#" id="openBtn">
+					<span class="burger-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+			</div>
 
 			<img id="imageResponsive" class="logo" src="images/devatopia.png" alt="devatopia"/>
 
 		</nav>
 
-		<div class="intro">
+		<section id="scrollToEquipe">
 
-			<h2>Développement d'un projet sur mesure</h2>
+			<div class="intro">
 
-			<p>Nous vous accompagnons dans la création, refonte ou amélioration de votre application mobile ou Web. Nous vous aidons à donner vie à vos idées !</p>
-			<p>Réalisons ensemble votre projet correspondant au mieux à vos besoins. Un projet sur mesure</p>
+				<h2>Développement d'un projet sur mesure</h2>
 
-		</div>
+				<p>Nous vous accompagnons dans la création, refonte ou amélioration de votre application mobile ou Web. Nous vous aidons à donner vie à vos idées !</p>
+				<p>Réalisons ensemble votre projet correspondant au mieux à vos besoins. Un projet sur mesure</p>
 
-		<section id="scrollToEquipe" class="equipe">
-
-			<div class="containerEquipe">
-				<img class="maxime" src="images/maxime.png" alt="maxime">
-				<h2 class="h2Equipe">Maxime Dehay</h2>
-				<h3 class="h3Equipe">Associé gérant</h3>
-				<div>
-					<p class="descriptionEquipe">Maxime est notre expert dans le développement Mobile, Web et API.</p>
-				</div>
 			</div>
 
-			<div class="containerEquipe">
-				<img class="alexandre" src="images/alexandre.png" alt="alexandre">
-				<h2 class="h2Equipe">Alexandre Louis</h2>
-				<h3 class="h3Equipe">Associé gérant</h3>
-				<div>
-					<p class="descriptionEquipe">Alexandre est notre concepteur UI/UX mais également développeur Mobile, Web et API.</p>
+			<div class="equipe">
+
+				<div class="containerEquipe">
+					<img class="maxime" src="images/maxime.png" alt="maxime">
+					<h2 class="h2Equipe">Maxime Dehay</h2>
+					<h3 class="h3Equipe">Associé gérant</h3>
+					<div>
+						<p class="descriptionEquipe">Maxime est notre expert dans le développement Mobile, Web et API.</p>
+					</div>
+				</div>
+
+				<div class="containerEquipe">
+					<img class="alexandre" src="images/alexandre.png" alt="alexandre">
+					<h2 class="h2Equipe">Alexandre Louis</h2>
+					<h3 class="h3Equipe">Associé gérant</h3>
+					<div>
+						<p class="descriptionEquipe">Alexandre est notre concepteur UI/UX mais également développeur Mobile, Web et API.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -96,7 +103,7 @@
 
 			</div>
 
-			<div>
+			<div class="containerImgFlutter">
 
 				<img class="flutterMobile" src="images/flutterMobile.png" alt="Flutter">
 
@@ -205,13 +212,13 @@
 
 						<div class="flexnomprenom">
 
-							<div class="name">
+							<div>
 
 								<label for="name">Votre nom</label>
 								<br>
 								<input type="text" id="name">
 							</div>
-							<div class="firstname">
+							<div>
 								<label for="firstname">Votre prénom</label>
 								<br>
 								<input type="text" id="firstname">
@@ -220,20 +227,25 @@
 
 						</div>
 
-						<div class="containerEmail">
-							<label for="email">Votre email</label>
-							<br>
-							<input type="email" id="email">
-						</div>
-
-						<div class="flextelsociete">
-
+						<div class="flexemailtel">
 							<div>
-								<label for="phone">Votre téléphone</label>
+								<label for="email">Votre email</label>
 								<br>
-								<input type="tel" id="tel">
+								<input type="email" id="email">
 							</div>
 
+							<div class="flextelsociete">
+
+								<div>
+									<label for="phone">Votre téléphone</label>
+									<br>
+									<input type="tel" id="tel">
+								</div>
+
+							</div>
+						</div>
+
+						<div class="flexsocietesujet">
 							<div>
 
 								<label for="société">Votre société</label>
@@ -241,13 +253,14 @@
 								<input type="text" id="societe">
 
 							</div>
-						</div>
 
-						<div class="containersujet">
+							<div>
 
-							<label for="subject">Sujet</label>
-							<br>
-							<input type="text" id="subject">
+								<label for="subject">Sujet</label>
+								<br>
+								<input type="text" id="subject">
+
+							</div>
 
 						</div>
 
@@ -263,7 +276,7 @@
 							<input type="checkbox" id="checkbox" required>
 							<label for="checkbox">J'ai lu la
 								<a href="" id="openModalBtn">politique de confidentialité</a>,
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											    j'y adhère sans réserve et je consens au traitement des données récoltées
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				    j'y adhère sans réserve et je consens au traitement des données récoltées
 							</label>
 						</div>
 
@@ -332,7 +345,7 @@
 								<p>Conformément à la réglementation en matière de protection des données à caractère personnel, notamment les articles 15 à 21 du RGPD, Vous disposez de droits concernant la collecte  et le traitement de vos données personnelles, qui pourront être exercés dans les conditions fixées par la réglementation en vigueur, à savoir:</p>
 								<p>- Le droit d'être informé de façon compréhensible, aisément accessible sur les traitements de vos données qui sont mis en oeuvre.</p>
 								<p>- Le droit d'accès à vos données.
-																																																																																																																																																																																																	- Le droit de rectification et d'obtenir la modification de vos données qui seraient inexactes ou incomplètes.
+																																																																																																																																																																																																																																																																																																																																																										- Le droit de rectification et d'obtenir la modification de vos données qui seraient inexactes ou incomplètes.
 									<br>
 									- Le droit à l'effacement de vos données, à moins que nous ayons des raisons légales ou légitimes de les conserver.
 									<br>
@@ -544,7 +557,7 @@
 					<p>Conformément à la réglementation en matière de protection des données à caractère personnel, notamment les articles 15 à 21 du RGPD, Vous disposez de droits concernant la collecte  et le traitement de vos données personnelles, qui pourront être exercés dans les conditions fixées par la réglementation en vigueur, à savoir:</p>
 					<p>- Le droit d'être informé de façon compréhensible, aisément accessible sur les traitements de vos données qui sont mis en oeuvre.</p>
 					<p>- Le droit d'accès à vos données.
-																																																																																																																																																																- Le droit de rectification et d'obtenir la modification de vos données qui seraient inexactes ou incomplètes.
+																																																																																																																																																																																																																																																																						- Le droit de rectification et d'obtenir la modification de vos données qui seraient inexactes ou incomplètes.
 						<br>
 						- Le droit à l'effacement de vos données, à moins que nous ayons des raisons légales ou légitimes de les conserver.
 						<br>
