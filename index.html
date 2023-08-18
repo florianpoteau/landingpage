@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Page devatopia" />
 	<title>Devatopia</title>
 	<link rel="shortcut icon" href="images/logo.jpg" />
 	<link rel="stylesheet" href="index.css" />
@@ -32,7 +33,7 @@
 			</ul>
 		</div>
 		<div class="burger">
-			<a href="#" id="openBtn">
+			<a href="#burger-open" aria-label="Ouvrir le menu" id="burger-open">
 				<span class="burger-icon">
 					<span></span>
 					<span></span>
@@ -41,7 +42,7 @@
 			</a>
 		</div>
 
-		<img id="imageResponsive" class="logo" src="images/devatopia.png" alt="devatopia" />
+		<img id="imageResponsive" class="logo" src="images/devatopia.png" alt="devatopia1" />
 
 	</nav>
 
@@ -60,7 +61,7 @@
 		<div class="equipe">
 
 			<div class="containerEquipe">
-				<img class="maxime" src="images/maxime.png" alt="maxime">
+				<img class="maxime" src="images/maxime.webp" alt="maxime">
 				<h2 class="h2Equipe">Maxime Dehay</h2>
 				<h3 class="h3Equipe">Associé gérant</h3>
 				<div>
@@ -69,7 +70,7 @@
 			</div>
 
 			<div class="containerEquipe">
-				<img class="alexandre" src="images/alexandre.png" alt="alexandre">
+				<img class="alexandre" src="images/alexandre.webp" alt="alexandre">
 				<h2 class="h2Equipe">Alexandre Louis</h2>
 				<h3 class="h3Equipe">Associé gérant</h3>
 				<div>
@@ -95,13 +96,15 @@
 			<h2>Un projet d'application mobile et/ou web ?</h2>
 			<h3>Nous vous accompagnons dans toutes les étapes de votre projet.</h3>
 			<br>
-			<li class="listeTechno">Conception d'un design moderne de votre application mobile et web</li>
-			<li class="listeTechno">Développement de votre application mobile pour Android, iOS et web</li>
-			<li class="listeTechno">Application adaptée pour tout type d'appareil (ordinateur, tablette, téléphone,...)
-			</li>
-			<li class="listeTechno">Développement d'une base de données si besoin</li>
-			<li class="listeTechno">Déploiement de l'application sur l'Apple Store et le Play Store</li>
-
+			<ul class="ulTechno">
+				<li class="listeTechno">Conception d'un design moderne de votre application mobile et web</li>
+				<li class="listeTechno">Développement de votre application mobile pour Android, iOS et web</li>
+				<li class="listeTechno">Application adaptée pour tout type d'appareil (ordinateur, tablette,
+					téléphone,...)
+				</li>
+				<li class="listeTechno">Développement d'une base de données si besoin</li>
+				<li class="listeTechno">Déploiement de l'application sur l'Apple Store et le Play Store</li>
+			</ul>
 			<div class="logoLanguage">
 
 				<a href="https://flutter.dev/"><img class="logoProjet" src="images/flutter.png" alt="image flutter"></a>
@@ -174,9 +177,8 @@
 						<p class="descriptionCompetence">Nous pouvons effectuer un audit de votre application mobile</p>
 					</div>
 				</div>
-				<div></div>
-				<img src="images/fleche-gauche.png" class="prevBtn" alt="">
-				<img src="images/fleche-droite.png" class="nextBtn" alt="">
+				<img src="images/fleche-gauche.png" class="prevBtn" alt="prev">
+				<img src="images/fleche-droite.png" class="nextBtn" alt="next">
 			</div>
 		</div>
 
@@ -210,8 +212,8 @@
 
 
 			</div>
-			<img src="images/fleche-gauche.png" class="prevBtn1" alt="">
-			<img src="images/fleche-droite.png" class="nextBtn1" alt="">
+			<img src="images/fleche-gauche.png" class="prevBtn1" alt="prev1">
+			<img src="images/fleche-droite.png" class="nextBtn1" alt="next1">
 		</div>
 	</div>
 
@@ -253,7 +255,7 @@
 						<div class="flextelsociete">
 
 							<div>
-								<label for="phone">Votre téléphone</label>
+								<label for="tel">Votre téléphone</label>
 								<br>
 								<input type="tel" id="tel">
 							</div>
@@ -264,7 +266,7 @@
 					<div class="flexsocietesujet">
 						<div>
 
-							<label for="société">Votre société</label>
+							<label for="societe">Votre société</label>
 							<br>
 							<input type="text" id="societe">
 
@@ -291,7 +293,7 @@
 					<div class="containerCheckbox">
 						<input type="checkbox" id="checkbox" required>
 						<label for="checkbox">J'ai lu la
-							<a href="" id="openModalBtn">politique de confidentialité</a>,
+							<a href="#modal-ouvrirPolitique" id="ouvrirPolitique">politique de confidentialité</a>,
 							j'y adhère sans réserve et je consens au traitement des données récoltées
 						</label>
 					</div>
@@ -529,9 +531,9 @@
 
 			<p>2022-2023 DEVATOPIA Tous droits réservés.</p>
 			<p>
-				<a href="" id="openModalMentions">Mentions Légales</a>
+				<a href="#modal-ouvrirMentions" id="ouvrirMentionsLegales">Mentions Légales</a>
 				-
-				<a href="" id="openModalBtn1">politique de confidentialité</a>
+				<a href="#modal-ouvrirPolitique" id="openPolitiqueConfidentialite">politique de confidentialité</a>
 			</p>
 
 		</div>

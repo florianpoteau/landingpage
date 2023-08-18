@@ -38,7 +38,7 @@ scrollToContact.scrollIntoView({ behavior: 'smooth' })
 
   // Sidebar responsive
 const sidenav = document.getElementById("mySidenav");
-const openBtn = document.getElementById("openBtn");
+const openBtn = document.getElementById("burger-open");
 const closeBtn = document.getElementById("closeBtn");
 
 openBtn.onclick = openNav;
@@ -117,7 +117,7 @@ prevBtn1.addEventListener("click", () => {
 
 
 // Modal politique de confidentialité formulaire
-  const openModalBtn = document.getElementById('openModalBtn');
+  const openModalBtn = document.getElementById('ouvrirPolitique');
   const closeModalBtn = document.getElementById('closeModalBtn');
   const modal = document.getElementById('modal');
 
@@ -140,7 +140,7 @@ prevBtn1.addEventListener("click", () => {
 
 
 // Modal Mention légale footer
-const openModalMention = document.getElementById('openModalMentions');
+const openModalMention = document.getElementById('ouvrirMentionsLegales');
 const closeModalMention = document.getElementById('closeModalMentions');
 const modalMention = document.getElementById('modalMentions');
 
@@ -162,7 +162,7 @@ window.addEventListener("click", (e) => {
 
 
 // Modal politique de confidentialité footer
-  const openModalBtn1 = document.getElementById('openModalBtn1');
+  const openModalBtn1 = document.getElementById('openPolitiqueConfidentialite');
   const closeModalBtn1 = document.getElementById('closeModalBtn1');
   const modal1 = document.getElementById('modal1');
 

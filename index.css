@@ -2,6 +2,9 @@
 
 :root{
     --box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
+    --abel-sanserif: 'Abel', sans-serif;
+    --noto-sanserif: 'Noto Sans', sans-serif;
+    --poppins-sanserif: 'Poppins', sans-serif;
 }
 
 nav{
@@ -41,24 +44,33 @@ ul{
   body{
     background-color: #fffafa;
     margin: 0;
+    color: #333;    
   }
 
   h2{
-    font-family: 'Abel', sans-serif;
+    font-family: var(--abel-sanserif);
     font-size: 35px;
     color: #6a90b1;
   }
 
   h3{
-    font-family: 'Abel', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--noto-sanserif)
   }
 
   p, li, label{
-    font-family: 'Abel', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--abel-sanserif);
+    font-family: var(--noto-sanserif);
+    font-family: var(--poppins-sanserif);
     font-size: 18px;
+  }
+
+  a{
+    color: aa8b61;
+  text-decoration: underline;
+  }
+
+  .ulTechno{
+    display: block;
   }
 
   .intro{
@@ -117,7 +129,7 @@ font-size: 15px;
 
 .listeTechno{
     list-style-type: circle;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 
 .logoLanguage{
@@ -275,13 +287,14 @@ gap: 8%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    width: 100%;
+    width: 80%;
 }
 
 .imageprojet2, .imageprojet3, .imageprojet4{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
 }
 
 /* Formulaire */
@@ -359,6 +372,10 @@ textarea:focus{
   width: 20%;
 }
 
+.alexandre, .maxime{
+  width: 100%;
+}
+
 .buttonContainer{
   text-align: center;
 }
@@ -366,7 +383,7 @@ textarea:focus{
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* Couleur de fond du bouton */
+  background-color: #0f61ba; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte */
   border: none;
   border-radius: 5px;
