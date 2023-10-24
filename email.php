@@ -20,6 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configurer PHPMailer
     $mail = new PHPMailer(true);
 
+    $mail->CharSet = 'UTF-8';
+
     try {
         // Paramètres SMTP
         $mail->isSMTP();
@@ -27,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth = true;
         $mail->Username = $_ENV['SMTP_USERNAME']; // Remplacez par votre nom d'utilisateur SMTP
         $mail->Password = $_ENV['SMTP_PASSWORD']; // Remplacez par votre mot de passe SMTP
-        $mail->SMTPSecure = 'tls'; // Utilisez 'tls' ou 'ssl' selon la configuration de votre serveur SMTP
+        $mail->SMTPSecure = 'tls'; // Utilisez 'tls' ou 'ssl' selon la configuration du serveur SMTP
         $mail->Port = $_ENV['SMTP_PORT']; // Port SMTP
 
         // Destinataire
@@ -36,12 +38,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Contenu de l'e-mail
         $mail->isHTML(false);
-        $mail->Subject = "Nouveau message depuis le formulaire de contact";
+        $mail->Subject = $subject;
         $mail->Body = "Nom: $name\nPrenom: $firstname\nEmail: $email\nTelephone: $phone\nSociete: $company\nSujet: $subject\nMessage:\n$message";
 
         // Envoyer l'e-mail
         $mail->send();
-        echo "Votre message a été envoyé avec succès.";
+?>
+        <script>
+            alert("Le formulaire a été envoyé avec succès");
+            window.location.href = "index.php";
+        </script>
+<?php
+
+        exit();
     } catch (Exception $e) {
         echo "Une erreur s'est produite lors de l'envoi du message : " . $mail->ErrorInfo;
     }
