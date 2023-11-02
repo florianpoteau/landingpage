@@ -449,14 +449,9 @@ footer{
 
 
 
-
-
-
-
-
 /* Media screen */
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   nav{
     display: flex;
@@ -531,5 +526,113 @@ footer{
     background-color: black;
     margin: 6px 0;
   }
+
+  .logoLanguage{
+    margin-left: 0;
+  }
+
+  .equipe{
+    display: block;
+  }
+
+  .technologie{
+    display: block;
+  }
+
+  .imageprojet1{
+    margin-top: 70%;
+  }
+
+  .containerEquipe{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .intro h2{
+    margin-top: 30%;
+  }
+
+  .intro p {
+    margin-bottom: 30%;
+  }
+
+
+
+  .logoProjet{
+    width: 80%;
+  }
+  
+  .flutterMobile{
+    width: 80%;
+margin-left: 10%;
+  }
+
+  .carousel-container{
+    width: 60%;
+
+  }
+
+  .nextBtn{
+    right: 10%;
+  }
+
+  .prevBtn{
+    left: 10%;
+  }
+
+  .flexForm{
+    display: block;
+  }
+
+.flexnomprenom{
+  display: block;
+  width: 95%;
+}
+.containerEmail{
+  width: 74%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.flextelsociete{
+  display: block;
+  width: 95%;
+}
+
+.containersujet{
+  width: 74%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.formcol2 h2{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.formcol2{
+  margin-bottom: 25%;
+  margin-top: 20%;
+}
+
+.name{
+  margin-bottom: 5%;
+}
+
+.telflexmobile{
+  margin-bottom: 5%;
+}
+
+.message{
+  margin-left: 0;
+  margin-right: 0;
+}
+.message{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
     }
 

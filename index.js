@@ -48,7 +48,8 @@ function openNav() {
   sidenav.classList.add("active");
 }
 
-function closeNav() {
+function closeNav(e) {
+  e.preventDefault();
   sidenav.classList.remove("active");
 }
 

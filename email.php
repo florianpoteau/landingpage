@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Username = $_ENV['SMTP_USERNAME']; // Remplacez par votre nom d'utilisateur SMTP
         $mail->Password = $_ENV['SMTP_PASSWORD']; // Remplacez par votre mot de passe SMTP
         $mail->SMTPSecure = 'tls'; // Utilisez 'tls' ou 'ssl' selon la configuration du serveur SMTP
-        $mail->Port = $_ENV['SMTP_PORT']; // Port SMTP
+        $mail->Port = $_ENV['SMTP_PORT'];
 
         // Destinataire
         $mail->setFrom($email, $name);
